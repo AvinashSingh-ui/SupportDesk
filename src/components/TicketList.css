@@ -145,3 +145,8 @@
   background: #dc2626;
   color: #ffffff;
 }
+.ticket-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
