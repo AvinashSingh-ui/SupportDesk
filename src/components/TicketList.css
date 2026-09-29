@@ -1,0 +1,147 @@
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.ticket-list-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #172554;
+}
+
+.ticket-count {
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: #eff4ff;
+  color: #475569;
+  font-size: 13px;
+}
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.ticket-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.ticket-card-header h3 {
+  margin: 0;
+  color: #172554;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.ticket-status,
+.ticket-priority {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-open {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+
+.status-resolved {
+  color: #047857;
+  background: #ecfdf5;
+}
+
+.priority-low {
+  color: #047857;
+  background: #ecfdf5;
+}
+
+.priority-medium {
+  color: #92400e;
+  background: #fffbeb;
+}
+
+.priority-high {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.ticket-action {
+  padding: 10px 15px;
+  border: 1px solid #dbe5ff;
+  border-radius: 8px;
+  background: #eff4ff;
+  color: #315ee7;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ticket-action:hover {
+  background: #315ee7;
+  color: #ffffff;
+}
+
+.empty-tickets {
+  margin: 0;
+  padding: 32px 16px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .ticket-card {
+    padding: 16px;
+  }
+
+  .ticket-card-header {
+    flex-direction: column;
+  }
+}
+.ticket-delete {
+  padding: 10px 15px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ticket-delete:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
