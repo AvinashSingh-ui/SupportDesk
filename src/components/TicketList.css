@@ -107,8 +107,8 @@
 }
 
 .ticket-action:hover {
-  background: #5067ac;
-  color: #333;
+  background: #ffffff;
+  color: #000000;
 }
 
 .empty-tickets {
@@ -142,8 +142,8 @@
 }
 
 .ticket-delete:hover {
-  background: #dc2626;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 .ticket-actions {
   display: flex;
